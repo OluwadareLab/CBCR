@@ -32,7 +32,7 @@ The GM12878 cell Hi-C dataset, GEO Accession number GSE63525, was downloaded fro
 
 **3.	Input file format:**
 -----------------------------------------------------------
-CBCR takes two input formats:
+CBCR allows two input formats:
 
 * Square matrix input format: A square matrix of size N by N consisting of intra-chromosomal contact matrix derived from Hi-C data, where N is the number of equal-sized regions of the chromosome.
 * Tuple input format: A hi-C contact file, each line contains 3 numbers (separated by a space) of a contact, position_1 position_2 interaction_frequencies.
