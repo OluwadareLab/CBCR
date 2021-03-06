@@ -43,12 +43,12 @@ Usage: To use, type in the terminal CBCR(input, learning_rate, conversion, max_i
                            		
                               
 * **Arguments**: <br />	
-	&nbsp;&nbsp;&nbsp;&nbsp;input: A string for the path of the input file <br />
-	&nbsp;&nbsp;&nbsp;&nbsp;learning_rate: The learning rate of the algorithm. A value between 0 and 1 is recommeneded.<br />
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; conversion: Vector or scalar. The factor(s) used to convert IF to distance, distance = 1/(IF^factor). When a vector is used, a structure is generated at every conversion factor and the value which maximizes the distance Spearman correlation coefficient is selected as the representitve structure. <br />
-	&nbsp;&nbsp;&nbsp;&nbsp;max_iter_0:  The maximum total number of iterations over all sub-curricula combined. <br />
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;max_iter_1: The maximum total number of iterations over the final training of CBCR if early convergence is met. <br />
-	&nbsp;&nbsp;&nbsp;&nbsp;verbose: Integer. Controls the output of CBCR in the console. A value of 0 will display only the current curricula. A value of 1 will display the current curricula and each iteration with the corresponding loss, and value for alpha and beta. A value of 2 will display the outputs of verbose = 1 and a plot that displays the evolution of the chromosome as training progresses. Note that this option will slow down CBCR.<br />
+	-input: A string for the path of the input file <br />
+	-learning_rate: The learning rate of the algorithm. A value between 0 and 1 is recommeneded.<br />
+	 -conversion: Vector or scalar. The factor(s) used to convert IF to distance, distance = 1/(IF^factor). When a vector is used, a structure is generated at every conversion factor and the value which maximizes the distance Spearman correlation coefficient is selected as the representitve structure. <br />
+	-max_iter_0:  The maximum total number of iterations over all sub-curricula combined. <br />
+	-max_iter_1: The maximum total number of iterations over the final training of CBCR if early convergence is met. <br />
+	-verbose: Integer. Controls the output of CBCR in the console. A value of 0 will display only the current curricula. A value of 1 will display the current curricula and each iteration with the corresponding loss, and value for alpha and beta. A value of 2 will display the outputs of verbose = 1 and a plot that displays the evolution of the chromosome as training progresses. Note that this option will slow down CBCR.<br />
 	
 **6.	Output:**
 -----------------------------------------------------------
