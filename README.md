@@ -21,12 +21,11 @@
 **1.	Content of folders:**
 -----------------------------------------------------------	
 * src: Matlab source code. <br />
-* input-and-models: Synthetic and Real Hi-C datasets used. <br />
-* Results: Output Structions generated for all the experiments performed.<br />
+* _structures: Output structions generated from the GM12878 cell line at four different resolutions (1Mb, 500Kb, 250Kb, 100Kb).<br />
 
 **2.	Hi-C Data used in this study:**
 -----------------------------------------------------------
-In our study, we used the synthetic dataset from [Adhikari, et al](https://doi.org/10.1186/s12864-016-3210-4). The contact maps, the original models and their reconstructed models used in this study were downloaded from [here](http://sysbio.rnet.missouri.edu/bdm_download/chromosome3d/unzipped/Input/Synthetic/)
+In our study, we used the synthetic dataset from [Adhikari, et al](https://doi.org/10.1186/s12864-016-3210-4). The contact maps, the original models and their reconstructed models used in this study were downloaded from [here](http://sysbio.rnet.missouri.edu/bdm_download/chromosome3d/unzipped/Input/Synthetic/). We also used the synthetic dataset from [Zou, et al](https://doi.org/10.1186/s13059-016-0896-1) which can be downloaded from [here](https://people.umass.edu/ouyanglab/hsa/index.html).
 
 The GM12878 cell Hi-C dataset, GEO Accession number GSE63525, was downloaded from [GSDB](http://sysbio.rnet.missouri.edu/3dgenome/GSDB/details.php?id=GM12878) with GSDB ID: OO7429SF
 
@@ -44,10 +43,10 @@ Usage: To use, type in the terminal CBCR(input, learning_rate, conversion, max_i
                               
 * **Arguments**: <br />	
 	-input: A string for the path of the input file <br />
-	-learning_rate: The learning rate of the algorithm. A value between 0 and 1 is recommeneded.<br />
-	 -conversion: Vector or scalar. The factor(s) used to convert IF to distance, distance = 1/(IF^factor). When a vector is used, a structure is generated at every conversion factor and the value which maximizes the distance Spearman correlation coefficient is selected as the representitve structure. <br />
-	-max_iter_0:  The maximum total number of iterations over all sub-curricula combined. <br />
-	-max_iter_1: The maximum total number of iterations over the final training of CBCR if early convergence is met. <br />
+	-learning_rate: The learning rate of the algorithm [Recommended value: .2].<br />
+	 -conversion: Vector or scalar. The factor(s) used to convert IF to distance, distance = 1/(IF^factor). When a vector is used, a structure is generated at every conversion factor in the vector and the value which maximizes the distance Spearman correlation coefficient is selected as the representitve structure. For example, if the input is [.1, .2, .3], then CBCR generates a structure for each value and selects whichever one that maximizes dSCC as the representitave structure. A vector input is recommended for a thorough search. <br />
+	-max_iter_0:  The maximum total number of iterations over all sub-curricula combined. This value should be smaller for smaller inputs, and larger for larger inputs. A value of 1,000 was used for the 1Mb and 500Kb, and 10,000 for the 250Kb and 100Kb resolutions in this study on the GM12878 input data <br />
+	-max_iter_1: The maximum total number of iterations over the final training of CBCR if early convergence is met. A value of 500 was used for the 1Mb and 500Kb, and a value of 1,000 was used for the 250Kb and 100Kb resolutions in this study on the GM12878 input data. <br />
 	-verbose: Integer. Controls the output of CBCR in the console. A value of 0 will display only the current curricula. A value of 1 will display the current curricula and each iteration with the corresponding loss, and value for alpha and beta. A value of 2 will display the outputs of verbose = 1 and a plot that displays the evolution of the chromosome as training progresses. Note that this option will slow down CBCR.<br />
 	
 **6.	Output:**
