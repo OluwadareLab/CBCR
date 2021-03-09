@@ -21,7 +21,7 @@
 **1.	Content of folders:**
 -----------------------------------------------------------	
 * src: Matlab source code. <br />
-* _structures: Output structions generated from the GM12878 cell line at four different resolutions (1Mb, 500Kb, 250Kb, 100Kb).<br />
+* GM12878_Output: Output structions and log files generated from the GM12878 cell line at four different resolutions (1Mb, 500Kb, 250Kb, 100Kb).<br />
 
 **2.	Hi-C Data used in this study:**
 -----------------------------------------------------------
