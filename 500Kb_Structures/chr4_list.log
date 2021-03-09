@@ -1,6 +1,0 @@
-Input file: chr4_list.txt
-The optimal structure is: chr4_list_CONVERT_FACTOR=0.5N=.pdb
-Convert factor: 0.500000
-RMSE: 1.755978
-Spearman correlation Dist vs. Reconstructed Dist: 0.973832
-Pearson correlation Dist vs. Reconstructed Dist: 0.952094
