@@ -1,0 +1,6 @@
+Input file: 14_Mbol_Primary
+The optimal structure is: 14_Mbol_Primary_CONVERT_FACTOR=0.4N=18.pdb
+Convert factor: 0.400000
+RMSE: 1.319117
+Spearman correlation Dist vs. Reconstructed Dist: 0.958159
+Pearson correlation Dist vs. Reconstructed Dist: 0.947689
