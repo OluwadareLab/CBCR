@@ -21,7 +21,11 @@
 **1.	Content of folders:**
 -----------------------------------------------------------	
 * src: Matlab source code. <br />
-* GM12878_Output: Output structions and log files generated from the GM12878 cell line at four different resolutions (1Mb, 500Kb, 250Kb, 100Kb).<br />
+* GM12878_Output: Output structions and log files generated from the GM12878 cell line using the Mbol restriction enzyme at four different resolutions (1Mb, 500Kb, 250Kb, 100Kb). These structures were generated using the primary-replicate combined mappings.<br />
+* Validation: Output structures and log files generated from the GM12878 cell line used for validation at 1Mb resolution.
+	* Mpol_Primary_Output: Outputs generated from the primary mappings using the Mbol restriction enzyme.
+	* Mbol_Replicate_Output: Outputs generated from the replicate mappings using the Mbol restriction enzyme.
+	* DpnII_Combined: Outputs generated from the primary-replicate combined mappings using the DpnII restriction enzyme. 
 
 **2.	Hi-C Data used in this study:**
 -----------------------------------------------------------
