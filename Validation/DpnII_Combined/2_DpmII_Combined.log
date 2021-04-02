@@ -1,0 +1,6 @@
+Input file: 2_DpmII_Combined
+The optimal structure is: 2_DpmII_Combined_CONVERT_FACTOR=0.5N=49.pdb
+Convert factor: 0.500000
+RMSE: 1.845567
+Spearman correlation Dist vs. Reconstructed Dist: 0.947352
+Pearson correlation Dist vs. Reconstructed Dist: 0.917840
