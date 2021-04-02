@@ -1,0 +1,6 @@
+Input file: 3_Replicate_Mbol
+The optimal structure is: 3_Replicate_Mbol_CONVERT_FACTOR=0.4N=40.pdb
+Convert factor: 0.400000
+RMSE: 1.210905
+Spearman correlation Dist vs. Reconstructed Dist: 0.969363
+Pearson correlation Dist vs. Reconstructed Dist: 0.950376
