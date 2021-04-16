@@ -17,8 +17,7 @@
 		 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email: ooluwada@uccs.edu 
     
 --------------------------------------------------------------------	
-<br />
-Cite: Hovenga V, Oluwadare O. CBCR: A Curriculum Based Strategy For Chromosome Reconstruction. International Journal of Molecular Sciences. 2021; 22(8):4140. https://doi.org/10.3390/ijms22084140 <br />
+**Cite:** Hovenga V, Oluwadare O. CBCR: A Curriculum Based Strategy For Chromosome Reconstruction. International Journal of Molecular Sciences. 2021; 22(8):4140. https://doi.org/10.3390/ijms22084140 <br />
     
 --------------------------------------------------------------------	
 
